@@ -16,7 +16,7 @@ Have a AlpineLinux Edge system, docker is fine.
 
 Follow the [Prerequisite in the guide](https://wiki.alpinelinux.org/wiki/How_to_make_a_custom_ISO_image_with_mkimage#Prerequisite), but git clone from this repo.
 
-In the [Configuration section](https://wiki.alpinelinux.org/wiki/How_to_make_a_custom_ISO_image_with_mkimage#Configuration), this repo provide two configured files 'mkimg.ubuntu.sh' and 'genapkovl-ubuntu.sh'.
+In the [Configuration section](https://wiki.alpinelinux.org/wiki/How_to_make_a_custom_ISO_image_with_mkimage#Configuration), this repo provide two configured files '[mkimg.ubuntu.sh](scripts/mkimg.ubuntu.sh)' and '[genapkovl-ubuntu.sh](scripts/genapkovl-ubuntu.sh)'.
 
 Finally in [Create the ISO](https://wiki.alpinelinux.org/wiki/How_to_make_a_custom_ISO_image_with_mkimage#Create_the_ISO), run the command in the scripts folder:
 ```
@@ -26,8 +26,8 @@ The generated ISO will locate at scripts/outdir.
 
 # Different from official AlpineLinux ISO
 * Preload packages relative to Ubuntu installation, e.g. debootstrap, perl. (See scripts/mkimg.ubuntu.sh)
-* Change the default apk repository to [http://dl-cdn.alpinelinux.org/alpine/edge/main](http://dl-cdn.alpinelinux.org/alpine/edge/main).
-* Auto login on tty1~6. (See scripts/genapkovl-ubuntu.sh)
-* Doing DHCP on startup.
-* A custom command "arch-chroot" which is similar to arch-chroot in ArchLinux, helping you to mount /proc /sys /dev before chroot into the target system.
+* Change the default apk repository to [http://dl-cdn.alpinelinux.org/alpine/edge/main](http://dl-cdn.alpinelinux.org/alpine/edge/main). (See [scripts/genapkovl-ubuntu.sh](scripts/genapkovl-ubuntu.sh))
+* Auto login on tty1~6. (See [scripts/genapkovl-ubuntu.sh](scripts/genapkovl-ubuntu.sh))
+* Doing DHCP on startup. (See [scripts/genapkovl-ubuntu.sh](scripts/genapkovl-ubuntu.sh))
+* A custom command "arch-chroot" which is similar to arch-chroot in ArchLinux, helping you to mount /proc /sys /dev before chroot into the target system. (See [scripts/genapkovl-ubuntu.sh](scripts/genapkovl-ubuntu.sh))
 
