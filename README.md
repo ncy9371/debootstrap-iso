@@ -5,7 +5,7 @@ Fork from [git://git.alpinelinux.org/aports](https://git.alpinelinux.org/aports/
 
 Install a Ubuntu system to a PC can not only use the Ubuntu official ISO, but also use [debootstrap](https://help.ubuntu.com/lts/installation-guide/amd64/apds04.html) which is similar to installation process guided by [ArchLinux](https://wiki.archlinux.org/index.php/installation_guide). The former installs a normal Ubuntu system but with some preloads (e.g. cloud-init, netplan, multipath-tools), and the latter installs a relative "clean" Ubuntu.
 
-Using debootstrap to install Ubuntu needs a running Linux system. In the past, I downloaded Ubuntu server official ISO, then I switched to tty2 and doing everything I needed. But debootstrap downloads all packages to the target system at runtime, the only reason to use the Ubuntu official ISO is that I can get a debootstrap on it.
+Using debootstrap to install Ubuntu needs a running Linux system. In the past, I downloaded big-sized Ubuntu server official ISO, then I switched to tty2 and doing everything I needed. But debootstrap downloads all packages to the target system at runtime, the only reason to use the Ubuntu official ISO is that I can get a debootstrap on it.
 
 So this repo makes a small bootable ISO built on the top of AlpineLinux, equipped with all you need when installing Ubuntu.
 
