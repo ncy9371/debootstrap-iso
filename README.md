@@ -1,5 +1,7 @@
 # Intro
-This repo forks from [git://git.alpinelinux.org/aports](https://git.alpinelinux.org/aports/) commit: e51fcde1ce0373940c401afe04929b074ac17a34.
+This repo makes a small ISO which contains all you need when installing Ubuntu system by debootstrap.
+
+Fork from [git://git.alpinelinux.org/aports](https://git.alpinelinux.org/aports/) commit: e51fcde1ce0373940c401afe04929b074ac17a34.
 
 Install a Ubuntu system to a PC can not only use the Ubuntu official ISO, but also use [debootstrap](https://help.ubuntu.com/lts/installation-guide/amd64/apds04.html) which is similar to installation process guided by [ArchLinux](https://wiki.archlinux.org/index.php/installation_guide). The former installs a normal Ubuntu system but with some preloads (e.g. cloud-init, netplan, multipath-tools), and the latter installs a relative "clean" Ubuntu.
 
@@ -10,6 +12,8 @@ So this repo makes a small bootable ISO built on the top of AlpineLinux, equippe
 Why don't I use Ubuntu mini.iso? Because same as official ISO, mini.iso also brings some stuff I don't want to the target system.
 
 # Usage
+Have a AlpineLinux Edge system, docker is fine.
+
 Follow the [Prerequisite in the guide](https://wiki.alpinelinux.org/wiki/How_to_make_a_custom_ISO_image_with_mkimage#Prerequisite), but git clone from this repo.
 
 In the [Configuration section](https://wiki.alpinelinux.org/wiki/How_to_make_a_custom_ISO_image_with_mkimage#Configuration), this repo provide two configured files 'mkimg.ubuntu.sh' and 'genapkovl-ubuntu.sh'.
